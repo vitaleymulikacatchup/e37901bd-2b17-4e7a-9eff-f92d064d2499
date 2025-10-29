@@ -1,8 +1,7 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
-import HeroBillboard from '@/components/sections/hero/HeroBillboard';
 import FeatureCardThree from '@/components/sections/feature/featureCardThree/FeatureCardThree';
 import ProductCardTwo from '@/components/sections/product/ProductCardTwo';
 import MetricCardOne from '@/components/sections/metrics/MetricCardOne';
@@ -12,6 +11,18 @@ import FaqSplitText from '@/components/sections/faq/FaqSplitText';
 import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FooterBase from '@/components/sections/footer/FooterBase';
 import { Award, Calendar, Flower, Heart, MessageCircle, Sparkles, Star, Users } from "lucide-react";
+
+const assetMap = [
+  { id: "hero-image", url: "https://images.pexels.com/photos/1536619/pexels-photo-1536619.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", alt: "Modern flower arrangement workshop with hands crafting beautiful botanical designs" },
+  { id: "terrarium-workshop", url: "https://images.pexels.com/photos/7223254/pexels-photo-7223254.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", alt: "Modern terrarium workshop with glass containers and plants" },
+  { id: "flower-crown", url: "https://images.pexels.com/photos/5414028/pexels-photo-5414028.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", alt: "Botanical flower crown making workshop with fresh flowers" },
+  { id: "succulent", url: "https://images.pexels.com/photos/796602/pexels-photo-796602.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", alt: "Succulent arrangement workshop with modern minimalist design" },
+  { id: "testimonial-sarah", url: "https://images.pexels.com/photos/8558897/pexels-photo-8558897.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", alt: "Portrait of Sarah, workshop participant" },
+  { id: "testimonial-emma", url: "https://images.pexels.com/photos/6647504/pexels-photo-6647504.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", alt: "Portrait of Emma, workshop participant" },
+  { id: "testimonial-maya", url: "https://images.pexels.com/photos/7205899/pexels-photo-7205899.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", alt: "Portrait of Maya, workshop participant" },
+  { id: "testimonial-lisa", url: "https://images.pexels.com/photos/7776140/pexels-photo-7776140.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", alt: "Portrait of Lisa, workshop participant" },
+  { id: "contact-studio", url: "https://images.pexels.com/photos/7858874/pexels-photo-7858874.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", alt: "Modern flower workshop studio interior with plants and natural lighting" }
+];
 
 export default function Home() {
   return (
@@ -33,21 +44,6 @@ export default function Home() {
             text: "Book Now",
             href: "contact"
           }}
-        />
-      </div>
-
-      <div id="hero" data-section="hero">
-        <HeroBillboard
-          title="Beautiful Botanical Art"
-          description="Join our hands-on flower workshops"
-          tag="Workshops"
-          tagIcon={Flower}
-          buttons={[
-            { text: "Book Workshop", href: "contact" },
-            { text: "View Classes", href: "feature" }
-          ]}
-          imageSrc="https://images.pexels.com/photos/1536619/pexels-photo-1536619.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-          imageAlt="Modern flower arrangement workshop with hands crafting beautiful botanical designs"
         />
       </div>
 
