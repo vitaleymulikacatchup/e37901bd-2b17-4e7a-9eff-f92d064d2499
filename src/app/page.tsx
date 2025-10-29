@@ -38,15 +38,15 @@ export default function Home() {
 
       <div id="hero" data-section="hero">
         <HeroBillboard
-          title="Create Beautiful Botanical Art"
-          description="Join our hands-on flower workshops and discover the art of modern floral design in a minimalist, inspiring environment"
+          title="Beautiful Botanical Art"
+          description="Join our hands-on flower workshops"
           tag="Workshops"
           tagIcon={Flower}
           buttons={[
             { text: "Book Workshop", href: "contact" },
             { text: "View Classes", href: "feature" }
           ]}
-          imageSrc="https://images.pexels.com/photos/5480020/pexels-photo-5480020.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+          imageSrc="https://images.pexels.com/photos/1536619/pexels-photo-1536619.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
           imageAlt="Modern flower arrangement workshop with hands crafting beautiful botanical designs"
         />
       </div>
@@ -142,7 +142,7 @@ export default function Home() {
             },
             {
               id: "2",
-              value: "98%",
+              value: "980%",
               title: "Satisfaction",
               description: "Customer satisfaction rate",
               icon: Heart
@@ -249,7 +249,7 @@ export default function Home() {
         <ContactSplit
           tag="Book Now"
           title="Ready to Create Something Beautiful?"
-          description="Join our next workshop and discover the joy of botanical art in a welcoming, inspiring environment"
+          description="Join "
           tagIcon={Calendar}
           imageSrc="https://images.pexels.com/photos/7858874/pexels-photo-7858874.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
           imageAlt="Modern flower workshop studio interior with plants and natural lighting"
@@ -291,7 +291,7 @@ export default function Home() {
               ]
             }
           ]}
-          copyrightText="© 2025 | Mossart Studio"
+          copyrightText="© 2027 | Mossart Studio"
         />
       </div>
     </ThemeProvider>
