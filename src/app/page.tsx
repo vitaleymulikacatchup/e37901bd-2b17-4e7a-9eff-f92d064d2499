@@ -53,7 +53,7 @@ export default function Home() {
 
       <div id="feature" data-section="feature">
         <FeatureCardThree
-          title="Our Workshop Collection"
+          title="Our Collection"
           description="Discover our curated selection of botanical workshops designed for all skill levels"
           tag="Featured"
           tagIcon={Sparkles}
