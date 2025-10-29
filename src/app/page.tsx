@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
@@ -12,6 +12,29 @@ import FaqSplitText from '@/components/sections/faq/FaqSplitText';
 import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FooterBase from '@/components/sections/footer/FooterBase';
 import { Award, Calendar, Flower, Heart, MessageCircle, Sparkles, Star, Users } from "lucide-react";
+
+const assetMap = [
+  {
+    id: "hero-image",
+    url: "https://images.pexels.com/photos/5480020/pexels-photo-5480020.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    alt: "Modern flower arrangement workshop with hands crafting beautiful botanical designs"
+  },
+  {
+    id: "terrarium-workshop",
+    url: "https://images.pexels.com/photos/7223254/pexels-photo-7223254.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    alt: "Modern terrarium workshop with glass containers and plants"
+  },
+  {
+    id: "flower-crown-workshop",
+    url: "https://images.pexels.com/photos/5414028/pexels-photo-5414028.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    alt: "Botanical flower crown making workshop with fresh flowers"
+  },
+  {
+    id: "succulent-arrangement",
+    url: "https://images.pexels.com/photos/796602/pexels-photo-796602.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    alt: "Succulent arrangement workshop with modern minimalist design"
+  }
+];
 
 export default function Home() {
   return (
@@ -46,8 +69,8 @@ export default function Home() {
             { text: "Book Workshop", href: "contact" },
             { text: "View Classes", href: "feature" }
           ]}
-          imageSrc="https://images.pexels.com/photos/5480020/pexels-photo-5480020.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-          imageAlt="Modern flower arrangement workshop with hands crafting beautiful botanical designs"
+          imageSrc={assetMap.find(asset => asset.id === "hero-image")?.url || "https://images.pexels.com/photos/5480020/pexels-photo-5480020.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"}
+          imageAlt={assetMap.find(asset => asset.id === "hero-image")?.alt || "Modern flower arrangement workshop with hands crafting beautiful botanical designs"}
         />
       </div>
 
@@ -62,22 +85,22 @@ export default function Home() {
               id: "01",
               title: "Terrarium Creation",
               description: "Learn to build stunning glass terrariums with carefully selected plants and decorative elements",
-              imageSrc: "https://images.pexels.com/photos/7223254/pexels-photo-7223254.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              imageAlt: "Modern terrarium workshop with glass containers and plants"
+              imageSrc: assetMap.find(asset => asset.id === "terrarium-workshop")?.url || "https://images.pexels.com/photos/7223254/pexels-photo-7223254.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+              imageAlt: assetMap.find(asset => asset.id === "terrarium-workshop")?.alt || "Modern terrarium workshop with glass containers and plants"
             },
             {
               id: "02",
               title: "Flower Crown Workshop",
               description: "Craft elegant flower crowns using fresh blooms and sustainable techniques",
-              imageSrc: "https://images.pexels.com/photos/5414028/pexels-photo-5414028.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              imageAlt: "Botanical flower crown making workshop with fresh flowers"
+              imageSrc: assetMap.find(asset => asset.id === "flower-crown-workshop")?.url || "https://images.pexels.com/photos/5414028/pexels-photo-5414028.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+              imageAlt: assetMap.find(asset => asset.id === "flower-crown-workshop")?.alt || "Botanical flower crown making workshop with fresh flowers"
             },
             {
               id: "03",
               title: "Succulent Arrangements",
               description: "Design minimalist succulent displays perfect for modern living spaces",
-              imageSrc: "https://images.pexels.com/photos/796602/pexels-photo-796602.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              imageAlt: "Succulent arrangement workshop with modern minimalist design"
+              imageSrc: assetMap.find(asset => asset.id === "succulent-arrangement")?.url || "https://images.pexels.com/photos/796602/pexels-photo-796602.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+              imageAlt: assetMap.find(asset => asset.id === "succulent-arrangement")?.alt || "Succulent arrangement workshop with modern minimalist design"
             }
           ]}
           layout="default"
@@ -98,7 +121,7 @@ export default function Home() {
               price: "$85",
               rating: 5,
               reviewCount: "127",
-              imageSrc: "https://images.pexels.com/photos/7223254/pexels-photo-7223254.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+              imageSrc: assetMap.find(asset => asset.id === "terrarium-workshop")?.url || "https://images.pexels.com/photos/7223254/pexels-photo-7223254.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
               imageAlt: "Beginner terrarium workshop experience"
             },
             {
@@ -108,7 +131,7 @@ export default function Home() {
               price: "$120",
               rating: 5,
               reviewCount: "89",
-              imageSrc: "https://images.pexels.com/photos/5414028/pexels-photo-5414028.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+              imageSrc: assetMap.find(asset => asset.id === "flower-crown-workshop")?.url || "https://images.pexels.com/photos/5414028/pexels-photo-5414028.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
               imageAlt: "Advanced floral design workshop"
             },
             {
@@ -118,7 +141,7 @@ export default function Home() {
               price: "$95",
               rating: 5,
               reviewCount: "156",
-              imageSrc: "https://images.pexels.com/photos/796602/pexels-photo-796602.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+              imageSrc: assetMap.find(asset => asset.id === "succulent-arrangement")?.url || "https://images.pexels.com/photos/796602/pexels-photo-796602.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
               imageAlt: "Succulent garden workshop experience"
             }
           ]}
