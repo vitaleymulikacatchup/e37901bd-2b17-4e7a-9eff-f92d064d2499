@@ -38,7 +38,7 @@ export default function Home() {
 
       <div id="hero" data-section="hero">
         <HeroBillboard
-          title="Create Beautiful Botanical Art"
+          title="Create"
           description="Join our hands-on flower workshops and discover the art of modern floral design in a minimalist, inspiring environment"
           tag="Workshops"
           tagIcon={Flower}
