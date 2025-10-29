@@ -46,7 +46,7 @@ export default function Home() {
             { text: "Book Workshop", href: "contact" },
             { text: "View Classes", href: "feature" }
           ]}
-          imageSrc="https://images.pexels.com/photos/5480020/pexels-photo-5480020.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+          imageSrc="https://images.pexels.com/photos/886521/pexels-photo-886521.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
           imageAlt="Modern flower arrangement workshop with hands crafting beautiful botanical designs"
         />
       </div>
